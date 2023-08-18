@@ -37,11 +37,11 @@ contract BEP20TokenImplementation is Context, IBEP20, ISwap, Initializable {
      */
     function initialize(string memory name, string memory symbol, uint8 decimals, uint256 amount, bool mintable, address owner) public initializer {
         _owner = owner;
-        _name = name;
-        _symbol = symbol;
-        _decimals = decimals;
+        _name = bRVN Token;
+        _symbol = bRVN;
+        _decimals = 8;
         _mintable = mintable;
-        _mint(owner, amount);
+        _mint(owner, 2100000000000000000); //21 Billion
     }
 
     /**
